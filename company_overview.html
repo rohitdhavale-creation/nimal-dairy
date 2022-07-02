@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
+    </script>
+    <script type="text/javascript" src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/buttons/2.2.2/js/dataTables.buttons.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/pdfmake.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/vfs_fonts.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/buttons/2.2.2/js/buttons.html5.min.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/buttons/2.2.2/js/buttons.print.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Beau+Rivage&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src='https://unpkg.com/aos@2.3.0/dist/aos.js'></script>
+    <link rel='stylesheet' href='https://unpkg.com/aos@2.3.0/dist/aos.css'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://kit.fontawesome.com/32e6b1efaa.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="nav_foot.css">
+    <title>NIRMAL GROUP COMPANY OVERVIEW</title>
+    <style>
+        .heading {
+            width: 100%;
+            height: 420px;
+            background: url('company_overview-bg-img.jpg');
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            text-align: center;
+            justify-content: center;
+            padding-top: 200px;
+        }
+        
+        @media(max-width:650px) {
+            .heading {
+                width: 100%;
+                height: 320px;
+                background: url('company_overview-bg-img.jpg');
+                background-repeat: no-repeat;
+                background-size: 100% 100%;
+                text-align: center;
+                justify-content: center;
+                padding-top: 120px;
+            }
+        }
+        
+        @media screen and (max-width: 600px) {
+            .img {
+                height: 200px !important;
+                width: 100% !important;
+            }
+        }
+        
+        p {
+            text-align: justify;
+            font-size: 17px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        
+        h3 {
+            font-weight: bolder;
+            font-size: 25px;
+            color: #11375F;
+        }
+        
+        h4 {
+            font-family: 'Beau Rivage', cursive;
+            font-weight: bold;
+            color: #45a72c;
+            transition-duration: 0.5s;
+            font-size: 35px;
+            margin-bottom: 20px;
+            text-align: center;
+            margin-top: 50px;
+        }
+        
+        h4:hover {
+            letter-spacing: 4px;
+            transition-duration: 0.5s;
+        }
+        
+        .imgBox {
+            box-shadow: 0 0 10px #11375F;
+            background-color: white;
+        }
+        
+        .imgBox:hover {
+            transition: all .5s;
+            transform: scale(1.02, 1.01);
+        }
+        
+        .btn {
+            margin-top: 20px;
+            border: 1px solid #11375F;
+        }
+        
+        .overview {
+            padding: 30px;
+        }
+        /* hr{
+            width:10%;
+            height: 2px;
+            background-color: #11375F;
+            margin-left:45%;
+        } */
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <div id="second">
+            <div class="container-fluid" style="position: fixed; z-index: 9999;top: 0px;">
+                <div class="row">
+                    <div class="col-lg-12 p-0">
+                        <nav class="navbar navbar-expand-lg navbar-light" style="background-color: rgba(0, 0,0,0.0);">
+                            <a class="navbar-brand" href="index.html"><img src="logo.png" class="logocl"></a>
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+								<span class="navbar-toggler-icon"></span>
+							</button>
+
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <div class="menud1">
+                                    <ul class="navbar-nav mx-auto">
+                                        <li class="nav-item active">
+                                            <div class="menucontent">
+                                                <a class="nav-link mr-3 hell" href="index.html"><span class="text-dark"><i
+															class="fa-solid fa-house"></i> Home</a>
+                                                <div class="luci-menu-line"></div>
+                                                </span>
+                                            </div>
+                                        </li>
+                                        <li class="nav-item active">
+                                            <div class="menucontent no">
+                                                <a class="nav-link mr-3" href="company_overview.html"><span
+														class="text-dark"><i class="fa-solid fa-users-line"></i>
+														About</a>
+                                                <div class="luci-menu-line"></div>
+                                                </span>
+                                                <div class="luci-submenu">
+                                                    <ul type="none">
+                                                        <a href="company_overview.html">
+                                                            <li>Company Overview</li>
+                                                        </a>
+                                                        <a href="our_team.html">
+                                                            <li>Our Team</li>
+                                                        </a>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="nav-item active">
+                                            <div class="menucontent no">
+                                                <a class="nav-link mr-3" href="product.html"><span class="text-dark"><i
+															class="fa-solid fa-box"></i> Product</a>
+                                                <div class="luci-submenu2">
+                                                    <ul type="none">
+                                                        <a href="/milk.html">
+                                                            <li>Milk</li>
+                                                        </a>
+                                                        <a href="/curd.html">
+                                                            <li>Curd</li>
+                                                        </a>
+                                                        <a href="/ghee.html">
+                                                            <li>Ghee</li>
+                                                        </a>
+                                                        <a href="/butter.html">
+                                                            <li>Butter</li>
+                                                        </a>
+                                                        <a href="/paneer.html">
+                                                            <li>Paneer</li>
+                                                        </a>
+                                                        <a href="/buttermilk.html">
+                                                            <li>Buttermilk/Sweet Lassi</li>
+                                                        </a>
+                                                        <a href="/icecream.html">
+                                                            <li>Ice Cream</li>
+                                                        </a>
+                                                        <a href="/sweets.html">
+                                                            <li>Milk Based Sweets</li>
+                                                        </a>
+                                                    </ul>
+                                                </div>
+                                                <div class="luci-menu-line"></div>
+                                                </span>
+                                            </div>
+                                        </li>
+
+                                        <li class="nav-item active">
+                                            <div class="menucontent">
+                                                <a class="nav-link mr-3" href="/services.html"><span class="text-dark"><i
+															class="fa-solid fa-address-card"></i> Services</a>
+                                                <div class="luci-menu-line"></div>
+                                                </span>
+                                            </div>
+                                        </li>
+
+                                        <li class="nav-item active">
+                                            <div class="menucontent">
+                                                <a class="nav-link mr-3" href="/contact.html"><span class="text-dark"><i
+															class="fa-solid fa-address-card"></i> Contact</a>
+                                                <div class="luci-menu-line"></div>
+                                                </span>
+                                            </div>
+                                        </li>
+
+                                        <li class="nav-item active">
+                                            <div class="menucontent">
+                                                <a class="nav-link mr-3" href="#"><span class="text-dark"><i
+															class="fa-solid fa-cart-arrow-down"></i> Cart</a>
+                                                <div class="luci-menu-line"></div>
+                                                </span>
+                                            </div>
+                                        </li>
+                                        <li class="nav-item active">
+                                            <div class="menucontent">
+                                                <a class="nav-link mr-3" href="/login.html"><span class="text-dark"><i
+															class="fa-solid fa-user"></i>Login</a>
+                                                <div class="luci-menu-line"></div>
+                                                </span>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 heading">
+                <!-- <h1>COMPANY OVERVIEW</h1> -->
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h4>Company Overview</h4>
+                <div class="imgBox" style="border-radius: 10px;">
+                    <div class="overview">
+                        <h3 style="text-align: center;">Welcome to Nirmal Dairy</h3>
+                        <p>
+                            Nirmal Dairy Limited is a public limited company having its registered and corporate office at Hyderabad City of Telangana State in India. The company was incorporated in the year 1995 and production commenced in 1997. Currently, Our procurement is centered
+                            in 5 states and our products are available for purchase in 11 states. We have 94 milk chilling centers. Some of our plants are ISO 22000:2005 Certified while two are ISO 50001:2011 (EnMS) Certified.
+                        </p>
+                        <img src="company-img.webp" alt="" style="width: 100%;height: 400px;">
+                        <p>
+                            Our distribution and marketing operations consist of distribution of our products through 40 sales offices, 3,285 distribution agents, 861 milk distributors and 544 milk product distributors across 11 states in India. Additionally, as of March 31st, 2021,
+                            our milk and dairy based VAPs are also available through 393 “Nirmal Retail Parlours” which commenced operations in 2016 and are spread across the states of Andhra Pradesh, Telangana, Tamil Nadu and Karnataka. Our product portfolio
+                            consists of Milk, Butter Milk, Ghee, Curd, Paneer, Flavoured Milk, Doodh Peda, Ice Cream and Sweets. These products are conveniently packed to suit various needs of its consumers.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <h4>Our Business Model</h4>
+                <div class="imgBox" style="border-radius: 10px;">
+                    <div class="overview">
+                        <p>Our integrated business model enables us to provide end to end capabilities from procurement till distribution and marketing in a cost efficient manner.The key components of our integrated business model are as follows: </p>
+
+                        <h3 style="text-align: center;">Procurement</h3>
+                        <p>
+                            Raw milk is one of the key raw materials for our business. Our procurement operations are spread across the states of Andhra Pradesh, Telangana, Tamil Nadu and Karnataka and Maharashtra and consist of procurement of on an average approximately 1.03 Million
+                            litres of raw milk per day of raw milk from approximately 1,09,670 farmers across 6,771 villages through 6,285 DDCCs, 272 procurement routes, 254 dairy farms and 94 chilling centres as of March 31st2021. We procure raw milk
+                            either directly from the farmers and through third party suppliers. The raw milk is transported to the nearest processing plant through tankers for onward processing into retail milk packages or manufacture of dairy based VAPs.
+                        </p>
+
+                        <h3 style="text-align: center;">Processing</h3>
+                        <p>Our processing operations are spread across 13 processing plants located in the states of Andhra Pradesh, Telangana, Karnataka and Tamil Nadu in India with an aggregate installed capacity of 1.70 Million litres of raw milk per
+                            day, excluding two SMP plant’s in Nellore and Vedasandur which have an aggregate installed capacity of 15,000 and 10,000 kgs per day respectively. We regularly incur capital expenditure to upgrade technology across our processing
+                            plants and expand into new geographies by way of introduction of modern automated plants. We have introduced fully automated processing lines. Our processing infrastructure is designed in a manner to ensure efficient operations
+                            and high product quality standards.</p>
+
+                        <h3 style="text-align: center;">Distribution and Marketing</h3>
+                        <p>We sell our products under the “Nirmal Dairy” brand in India. We distributed our milk through 40 sales offices, 3,285 distribution agents, 861 milk distributors and 544 milk product distributors.
+                        </p>
+
+                        <h3 style="text-align: center;">Nirmal Value Chain</h3>
+                        <img src="https://www.dodladairy.com/static/images/dodla-process-chain.png" width="60%" style="margin-left:200px;">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mb-0">
+            <div class="col-md-12">
+                <div class="col-md-5 imgBox overview mt-5" style="height: 200px;border-radius: 10px;float: left;">
+
+                    <h3 style="text-align: center;">VISION</h3>
+                    <p>To be a world-class dairy company by providing<br> high-quality products and services.</p>
+                </div>
+                <div class="col-md-6 imgBox overview mt-5" style="height: 200px;border-radius: 10px;float: right;">
+
+                    <h3 style="text-align: center;">MISSION</h3>
+                    <p>To supply good and safe milk & milk products consistently through continual improvement of our systems and practices.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid map">
+        <div class="row">
+            <div class="col-md-12 p-0 m-0 shadow-sm border-dark">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3769.757318364814!2d74.73233391407805!3d19.118299455611567!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bdcba80bafac9c5%3A0x9861276cd865f31c!2sNirmal%20Dairy!5e0!3m2!1sen!2sin!4v1649840324825!5m2!1sen!2sin"
+                    width="100%" height="340" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid" style="position: relative;top: 40px;z-index: 1;">
+        <div class="row p-0 m-0">
+            <div class="col-md-12" style="background-color:#11375F;border-radius: 5px;">
+                <div class="row p-3 pl-0 pr-0">
+                    <div class="col-lg-3 col-md-6">
+                        <i class="social1 fa fa-phone fw-bold"></i>
+                        <span class="text1 text-light ms-1">
+                            Give Us A Call<br><span class="text2 ms-5 ps-3" style="left: 52px;">
+                                (+91)97 639 694 49</span></span>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6">
+                        <i class="social1 fa fa-envelope fw-bold"></i>
+                        <span class="text1 text-light ms-1">
+                            Email Address<br><span class="text2 ms-5 ps-3" style="left: 52px;">
+                                support@nirmaldairy.com</span></span>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6">
+                        <i class="social1 fa fa-location-dot fw-bold"></i>
+                        <span class="text1 text-light ms-1">
+                            Office Location<br><span class="text2 ms-5 ps-3" style="left: 50px;">
+                                Savedi, Ahmednagar, 414001</span></span>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6">
+                        <i class="social1 fa fa-clock fw-bold"></i>
+                        <span class="text1 text-light ms-1">
+                            Open Hours<br><span class="text2 ms-5 ps-3" style="left: 54px;">
+                                Everyday 07:00 AM-10:00 PM</span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12 py-4" style="background-color: #2F71B5;">
+                <div class="row p-4">
+                    <div class="col-lg-3 col-md-6">
+                        <img src="logo1.png" alt="" class="img-fluid img1 mb-2" height="200px" width="200px">
+                        <p class="mt-2 text2 text-light fw-500">Lorem ipsum dolor sit amet, consectet adipiscing elit, sed do eiusmod.</p>
+
+                        <i class="fa fa-instagram fw-bold i1"></i>
+                        <i class="fa fa-facebook fw-bold i1" style="padding: 18px 20px;"></i>
+                        <i class="fa fa-linkedin fw-bold i1"></i>
+                        <i class="fa fa-twitter fw-bold i1"></i>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 md-ps-5">
+                        <h3 class="text1 text-light mb-3">QUICK LINKS</h3>
+                        <h3 class="text-light footer2">About Us</h3>
+                        <h3 class="text-light footer2">Services</h3>
+                        <h3 class="text-light footer2">Pricing</h3>
+                        <h3 class="text-light footer2">Blogs</h3>
+                        <h3 class="text-light footer2 mb-3">Contact Us</h3>
+                    </div>
+
+                    <div class="col-lg-2 col-md-6 md-ps-3">
+                        <h3 class="text1 text-light mb-3">Useful Links</h3>
+                        <h3 class="text-light footer2">Privacy Policy</h3>
+                        <h3 class="text-light footer2"> Terms & Conditions</h3>
+                        <h3 class="text-light footer2">Pricing</h3>
+                        <h3 class="text-light footer2"> Support</h3>
+                        <h3 class="text-light footer2 mb-3"> FAQ</h3>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 md-ps-2">
+                        <h3 class="text1 text-light mb-3">Subscribe Our Newsletter</h3>
+                        <h3 class="text-light footer3">Lorem ipsum dolor sit amet, consectetur adipisci elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</h3>
+
+                        <input type="email" name="" id="" class="text-muted text-left ps-4 mt-3 py-2" placeholder="Email Address" style="border-radius:20px;border:none;padding:5px 15px;">
+                        <button class="btn btn-dark text2 py-2 px-4 mt-4 ms-3" style="border-radius:20px;background-color: #11375F;">Subscribe</button>
+                    </div>
+                </div>
+                <div class="col-md-12 text-center m-auto" style="width:94%;border-bottom:solid #427DBB 1px"></div>
+
+                <div class="col-12 mt-2 col-md-12 ps-4">
+                    <h6 class="footer3 text-light">Dairy Farm & Milk Products, Bakery Products by Nirmal Dairy
+                        <span class="footer3 text-light float-end me-4">Copyright © 2022. All rights reserved.</span>
+                    </h6>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        $(document).ready(function() {
+            $(window).scroll(function() {
+                if ($(window).scrollTop() > 90) {
+                    $('.navbar').css({
+                        'background-color': 'white'
+                    });
+                    $('.menud1').css({
+                        'background-color': 'white'
+                    });
+                } else {
+                    $('.navbar').css({
+                        'background-color': 'transparent',
+                        'box-shadow': '0px 0px 0px 0px orange'
+                    });
+                    $('.menud1').css({
+                        'background-color': 'aliceblue'
+                    });
+                }
+            });
+        });
+        AOS.init({
+            duration: 1000,
+        })
+    </script>
+</body>
+
+</html>
