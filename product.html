@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+        integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+        integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
+    </script>
+    <script type="text/javascript" src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/buttons/2.2.2/js/dataTables.buttons.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/pdfmake.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/vfs_fonts.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/buttons/2.2.2/js/buttons.html5.min.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/buttons/2.2.2/js/buttons.print.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Beau+Rivage&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src='https://unpkg.com/aos@2.3.0/dist/aos.js'></script>
+    <link rel='stylesheet' href='https://unpkg.com/aos@2.3.0/dist/aos.css'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<script src="https://kit.fontawesome.com/32e6b1efaa.js" crossorigin="anonymous"></script>
+	<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="nav_foot.css">
+    <title>NIRMAL GROUP PRODUCTS</title>
+    <style>
+        .heading {
+        width: 100%;
+        height: 420px;
+        background: url('products-bg-img.jpg');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        text-align: center;
+        justify-content: center;
+        padding-top: 180px;
+    }
+
+    @media(max-width:650px) {
+    .heading {
+        width: 100%;
+        height: 320px;
+        background: url('products-bg-img.jpg');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        text-align: center;
+        justify-content: center;
+        padding-top: 90px;
+    }
+}
+    </style>
+</head>
+
+<body>
+    <header>
+        <div id="second">
+            <div class="container-fluid" style="position: fixed; z-index: 9999;top: 0px;">
+                <div class="row">
+                    <div class="col-lg-12 p-0">
+                        <nav class="navbar navbar-expand-lg navbar-light" style="background-color: rgba(0, 0,0,0.0);">
+                            <a class="navbar-brand" href="index.html"><img src="logo.png" class="logocl"></a>
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+								<span class="navbar-toggler-icon"></span>
+							</button>
+
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <div class="menud1">
+                                    <ul class="navbar-nav mx-auto">
+                                        <li class="nav-item active">
+                                            <div class="menucontent">
+                                                <a class="nav-link mr-3 hell" href="index.html"><span class="text-dark"><i
+															class="fa-solid fa-house"></i> Home</a>
+                                                <div class="luci-menu-line"></div>
+                                                </span>
+                                            </div>
+                                        </li>
+                                        <li class="nav-item active">
+                                            <div class="menucontent no">
+                                                <a class="nav-link mr-3" href="company_overview.html"><span
+														class="text-dark"><i class="fa-solid fa-users-line"></i>
+														About</a>
+                                                <div class="luci-menu-line"></div>
+                                                </span>
+                                                <div class="luci-submenu">
+                                                    <ul type="none">
+                                                        <a href="company_overview.html">
+                                                            <li>Company Overview</li>
+                                                        </a>
+                                                        <a href="our_team.html">
+                                                            <li>Our Team</li>
+                                                        </a>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="nav-item active">
+                                            <div class="menucontent no">
+                                                <a class="nav-link mr-3" href="product.html"><span class="text-dark"><i
+															class="fa-solid fa-box"></i> Product</a>
+                                                <div class="luci-submenu2">
+                                                    <ul type="none">
+                                                        <a href="/milk.html">
+                                                            <li>Milk</li>
+                                                        </a>
+                                                        <a href="/curd.html">
+                                                            <li>Curd</li>
+                                                        </a>
+                                                        <a href="/ghee.html">
+                                                            <li>Ghee</li>
+                                                        </a>
+                                                        <a href="/butter.html">
+                                                            <li>Butter</li>
+                                                        </a>
+                                                        <a href="/paneer.html">
+                                                            <li>Paneer</li>
+                                                        </a>
+                                                        <a href="/buttermilk.html">
+                                                            <li>Buttermilk/Sweet Lassi</li>
+                                                        </a>
+                                                        <a href="/icecream.html">
+                                                            <li>Ice Cream</li>
+                                                        </a>
+                                                        <a href="/sweets.html">
+                                                            <li>Milk Based Sweets</li>
+                                                        </a>
+                                                    </ul>
+                                                </div>
+                                                <div class="luci-menu-line"></div>
+                                                </span>
+                                            </div>
+                                        </li>
+
+                                        <li class="nav-item active">
+                                            <div class="menucontent">
+                                                <a class="nav-link mr-3" href="/services.html"><span class="text-dark"><i
+															class="fa-solid fa-address-card"></i> Services</a>
+                                                <div class="luci-menu-line"></div>
+                                                </span>
+                                            </div>
+                                        </li>
+
+                                        <li class="nav-item active">
+                                            <div class="menucontent">
+                                                <a class="nav-link mr-3" href="/contact.html"><span class="text-dark"><i
+															class="fa-solid fa-address-card"></i> Contact</a>
+                                                <div class="luci-menu-line"></div>
+                                                </span>
+                                            </div>
+                                        </li>
+
+                                        <li class="nav-item active">
+                                            <div class="menucontent">
+                                                <a class="nav-link mr-3" href="#"><span class="text-dark"><i
+															class="fa-solid fa-cart-arrow-down"></i> Cart</a>
+                                                <div class="luci-menu-line"></div>
+                                                </span>
+                                            </div>
+                                        </li>
+                                        <li class="nav-item active">
+                                            <div class="menucontent">
+                                                <a class="nav-link mr-3" href="/login.html"><span class="text-dark"><i
+															class="fa-solid fa-user"></i>Login</a>
+                                                <div class="luci-menu-line"></div>
+                                                </span>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 heading">
+                <h1>All Products</h1>
+                <h2>Home <i class="fa fa-angle-right text-center mx-2"></i><span class="text-dark">Products</span></h2>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid p-0 m-0 mb-5">
+        <div class="row m-0 p-0">
+            <div class="col-12 col-lg-6 col-md-12 p-4 mt-1">
+                <img src="a236.jpg" alt="" class="img-fluid p-md-5" width="auto" style="border-radius: 20px;">
+                <img src="a237.jpg" alt="" height="230px" class="img-fluid img2 d-sm-block d-none" width="230px"
+                    style="border-radius:20px !important;">
+                <div class="a">
+                    <h3 class="text-center pt-4 text-light font1 items" data-aos="fade-up">
+                        Best Quality <br><span style="color:#0A306C;">Since<br></span>
+                        <span class="font2">
+                            1972</span>
+                    </h3>
+
+                </div>
+            </div>
+            <div class="col-md-6 p-4 mt-5 ">
+                <h3 class="text-left ms-5 fw-bold font3">About Products</h3>
+                <h3 class="text-left ms-5 fw-bolder font4">Our Farm Creates<br>
+                    the Best Dairy Products</h3>
+                <h4 class="lead font5 ms-5 mt-4">Maecenas eros tortor, luctus nec nisi ac, dignissim euis urna.<br>
+                    Aliquam
+                    id venenatis
+                    arcu. Quisque euismod tristique ullamcorper </h4>
+                <div class="b text-left mt-5 ms-5">
+                    <i class="fa fa-check text-light bg-warning p-1 ms-5 me-2 icon3 mb-4"></i>
+                    <h3 class="font5 fw-bold d-inline-block">Aliquam vehicula purus lorem</h3><br>
+                    <i class="fa fa-check text-light bg-warning p-1 ms-5 me-2 icon3 mb-4"></i>
+                    <h3 class="font5 fw-bold d-inline-block">Vitae eleifend velit pellentesque vel</h3><br>
+                    <i class="fa fa-check text-light bg-warning p-1 ms-5 me-2 icon3"></i>
+                    <h3 class="font5 fw-bold d-inline-block">Aliquam vehicula purus lorem</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid py-5" style="background:url(a242.png) no-repeat center center/cover;height:auto">
+        <div class="row p-5" style="overflow:hidden;">
+            <div class="col-md-12 p-4">
+                <h4 class="text-center text-warning font3">Our Products</h4>
+                <h1 class="text-center text-light"><strong>Organic Milk Products</strong></h1>
+                <p class="fw-500  text-center mt-4" style="color: #C9D1DE;">Phasellus dapibus tempor odio in
+                    sollicitudin. Ut suscipit sem vitae diam maximus, <br>ut tristique
+                    magna dapibus. Etiam at urna tortor.</p>
+            </div>
+            <div class="col-lg-4 col-md-6 my-4 items" data-aos="fade-right">
+                <div class="card prod">
+                    <div class="card-body p-0 m-0">
+                        <img src="a243.jpg" alt="" class="img-fluid cardeffect">
+
+                        <h4 class="text-left ms-4 fw-bold card1">Cottage Cheese <br>& Cream</h4>
+                        <i class="fa fa-angle-right cardangle1"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 my-4 items" data-aos="fade-up">
+                <div class="card prod">
+                    <div class="card-body p-0  m-0">
+                        <img src="a244.jpg" alt="" class="img-fluid cardeffect">
+
+                        <h4 class="text-left ms-4 fw-bold card1">Oraganic Milk <br>& Kefir</h4>
+                        <i class="fa fa-angle-right cardangle1"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 my-4 m-auto items" data-aos="fade-left">
+                <div class="card prod">
+                    <div class="card-body p-0  m-0">
+                        <img src="a245.jpg" alt="" class="img-fluid cardeffect">
+
+                        <h4 class="text-left ms-4 fw-bold text-light card1 ">Hard Cheese <br>Products</h4>
+                        <i class="fa fa-angle-right cardangle1"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid py-5" style="background-color: #F6F5F1; ">
+        <div class="row p-4">
+            <div class="col-md-12">
+                <div class="row py-5">
+                    <div class="col-md-4 mt-5">
+                        <h1 class="fw-bold text3">Our products <span style="color:#E8BC5A">are<br>based</span><br>on
+                            high quality milk</h1>
+                        <h5 class="text-dark font5 my-4 text-justify">In molestie scelerisque aliquet. Vestibulum sed
+                            pretium lacus,
+                            at volutpat nibh. Phasellus
+                            metus turpis, mollis sed eros sodales, egestas ultricies augue</h5>
+                        <div class="box text fw-bold pt-3 d-inline-block me-3">0.5%</div>
+                        <div class="box text fw-bold pt-3 d-inline-block me-3">1.5%</div>
+                        <div class="box text fw-bold pt-3 d-inline-block me-3">2.5%</div>
+                        <div class="box text fw-bold pt-3 d-inline-block me-3">3.5%</div>
+                        <div class="box text fw-bold pt-3 d-inline-block me-3">6%</div>
+                        <h3 class="fw-bold text4 mt-5 pt-5" style="color: #0A306C;">Environmentally <span
+                                style="color:#E8BC5A;">friendly</span></h3>
+                        <h5 class="text-dark font5 my-3 text-justify">Sed consectetur, est a rhoncus cursus, nulla
+                            sapien dictum erat, sit amet tempus ante elit sed lacus. Praesent pharetra placerat elit, eu
+                            dictum justo faucibus nec.</h5>
+                    </div>
+                    <div class="col-md-4 d-md-block d-none items" data-aos="fade-up">
+                        <img src="a252.png" alt="" class="img-fluid">
+                    </div>
+                    <div class="col-md-4 mt-5">
+                        <div class="row p-3">
+                            <div class="col-md-3"><i class="fa fa-cow box2"></i></div>
+                            <div class="col-md-9 text-left ps-4 text-justify">
+                                <h4 class="fw-bold" style="color:#0A306C">100% Organic<br> Products</h4>
+                                <p style="color: #0A306C;">Aenean condimentum, enim
+                                    quis mattis vehicula</p>
+                            </div>
+                            <div class="col-md-3 mt-5"><i class="fa fa-cow box2"></i></div>
+                            <div class="col-md-9 mt-5 text-left ps-4 text-justify">
+                                <h4 class="fw-bold" style="color:#0A306C">Recommended
+                                    <br>for babies
+                                </h4>
+                                <p style="color: #0A306C;">Aenean condimentum, enim
+                                    quis mattis vehicula</p>
+                            </div>
+                            <div class="col-md-3 mt-5"><i class="fa fa-cow box2"></i></div>
+                            <div class="col-md-9 mt-5 text-left ps-4 text-justify">
+                                <h4 class="fw-bold" style="color:#0A306C">
+                                    High Quality<br>
+                                    Raw Milk</h4>
+                                <p style="color: #0A306C;">Aenean condimentum, enim
+                                    quis mattis vehicula</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+        <div class="container-fluid mt-5 pt-5">
+            <div class="row">
+                <div class="col-lg-3 p-1">
+                <div class="p-4" style="background-color: #F2F0EA;border-radius: 30px;height:18rem;">
+                    <!-- <i class="fa fa-droplet fw-bold icon4"></i> -->
+                    <h4 class="text-center fw-bold" style="color: #0A306C;">CART</h4>
+                    <p class="text-center mt-4" style="color: #0A306C;">No Products In The Cart</p>
+                </div>
+                <div class=" py-5 mt-3  d-md-block d-flex justify-content-center align-items-center "
+                style="background-color:#0A306C;border-radius: 30px;padding: 15px;">
+                <input type="search" name="" id="" class="px-5 py-3 search text-center d-lg-inline-block fw-200"
+                    placeholder="Search products...">
+                <i class="fa fa-search p-3 icon6 d-lg-inline-block d-none"></i>
+            </div>
+
+            <div class="mt-3 p-4" style="background-color: #F2F0EA;border-radius: 20px;">
+                <!-- <i class="fa fa-droplet fw-bold icon4_1"></i> -->
+                <h4 class="text-center fw-bold mb-3" style="color: #0A306C;">Product Categories</h4>
+
+                <i class="fa fa-angle-right mb-4" style="color: #E8BC5A;"></i>
+                <a href="#" style="text-decoration: none;"> <span class="ms-4 fw-bold"
+                        style="color: #0A306C;">Cheese</span><br></a>
+
+                <i class="fa fa-angle-right mb-4" style="color: #E8BC5A;"></i>
+                <a href="#" style="text-decoration: none;"> <span class="ms-4 fw-bold"
+                        style="color: #0A306C;">Milk</span><br></a>
+
+                <i class="fa fa-angle-right mb-4" style="color: #E8BC5A;"></i>
+                <a href="#" style="text-decoration: none;"> <span class="ms-4 fw-bold"
+                        style="color: #0A306C;">Curd</span><br></a>
+
+                <i class="fa fa-angle-right mb-4" style="color: #E8BC5A;"></i>
+                <a href="#" style="text-decoration: none;"> <span class="ms-4 fw-bold"
+                        style="color: #0A306C;">Milk Products</span><br></a>
+
+                <i class="fa fa-angle-right mb-4" style="color: #E8BC5A;"></i>
+                <a href="#" style="text-decoration: none;"> <span class="ms-4 fw-bold"
+                        style="color: #0A306C;">Panner</span><br></a>
+
+                <i class="fa fa-angle-right mb-4" style="color: #E8BC5A;"></i>
+                <a href="#" style="text-decoration: none;"> <span class="ms-4 fw-bold"
+                        style="color: #0A306C;">Yogurts</span><br></a>
+
+                <i class="fa fa-angle-right mb-4" style="color: #E8BC5A;"></i>
+                <a href="#" style="text-decoration: none;"> <span class="ms-4 fw-bold"
+                        style="color: #0A306C;">Buttermilk/Sweet Lassi</span><br></a>
+
+                <i class="fa fa-angle-right mb-4" style="color: #E8BC5A;"></i>
+                <a href="#" style="text-decoration: none;"> <span class="ms-4 fw-bold"
+                        style="color: #0A306C;">Panner</span><br></a>
+
+                <i class="fa fa-angle-right mb-3" style="color: #E8BC5A;"></i>
+                <a href="#" style="text-decoration: none;"> <span class="ms-4 fw-bold"
+                        style="color: #0A306C;">Milk Nutrition</span><br></a>
+
+            </div>
+
+            </div>
+            <div class="col-lg-9">
+                <div class="row">
+                    <div class="col-lg-4 ">
+                        <div class="card card2">
+                            <div class="card-body p-0 m-0">
+                                <img src="products_02.jpg" alt="" class="img-fluid cardeffect2 px-3">
+                                <h5 class="text-left fw-bold my-4 ms-5 d-inline-block text6" style="color: #0A306C;">Cow
+                                    Ghee
+                                    <br> <span style="color:#E8BC5A;">$ 5.5</span>
+                                </h5>
+                                <i class="fa fa-lock d-inline-block float-right mt-4 mx-5 icon5 p-3"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="card  card2">
+                            <div class="card-body p-0 m-0">
+                                <img src="oreoicecream.jpg" alt="" class="img-fluid cardeffect2 px-3">
+                                <h5 class="text-left fw-bold my-4 ms-5 d-inline-block text6" style="color: #0A306C;">
+                                    Oreo Icecream
+                                    <br> <span style="color:#E8BC5A;">$ 5.5</span>
+                                </h5>
+                                <i class="fa fa-lock d-inline-block float-right mt-4 mx-5 icon5 p-3"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="card  card2">
+                            <div class="card-body p-0 m-0">
+                                <img src="curd4.jpg" alt="" class="img-fluid cardeffect2 px-1 mt-5 mb-4">
+                                <h5 class="text-left fw-bold my-3 ms-5 d-inline-block text6" style="color: #0A306C;">
+                                    Curd
+                                    <br> <span style="color:#E8BC5A;">$ 5.5</span>
+                                </h5>
+                                <i class="fa fa-lock d-inline-block float-right mt-4 mx-5 icon5 p-3"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-lg-4">
+                        <div class="card  card2">
+                            <div class="card-body p-0 m-0">
+                                <img src="whitebutter.png" alt="" class="img-fluid cardeffect2 px-3 my-5">
+                                <h5 class="text-left fw-bold my-4 ms-5 d-inline-block text6" style="color: #0A306C;">
+                                    Cooking Butter
+                                    <br> <span style="color:#E8BC5A;">$ 5.5</span>
+                                </h5>
+                                <i class="fa fa-lock d-inline-block float-right mt-4 mx-5 icon5 p-3"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="card  card2">
+                            <div class="card-body p-0 m-0">
+                                <img src="a258.jpg" alt="" class=" cardeffect2 px-3" height="254px">
+                                <h5 class="text-left fw-bold my-4 ms-4 d-inline-block text6" style="color: #0A306C;">
+                                    Cow Milk
+
+                                    <br> <span style="color:#E8BC5A;">$ 5.5</span>
+                                </h5>
+                                <i class="fa fa-lock d-inline-block float-right mt-4 mx-5 icon5 p-3"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="card  card2">
+                            <div class="card-body p-0 m-0">
+                                <img src="cowmilk.jpg" alt="" class=" cardeffect2 px-3 mt-5 mb-4" height="178px">
+                                <h5 class="text-left fw-bold my-4 ms-4 d-inline-block text6" style="color: #0A306C;">Cow
+                                    Milk
+                                    <br> <span style="color:#E8BC5A;">$ 5.5</span>
+                                </h5>
+                                <i class="fa fa-lock d-inline-block float-right mt-4 mx-5 icon5 p-3"></i>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="row mt-3">
+                    <div class="col-lg-4">
+                        <div class="card  card2">
+                            <div class="card-body p-0 m-0">
+                                <img src="a256.jpg" alt="" class="img-fluid cardeffect2 px-3 ">
+                                <h5 class="text-left fw-bold my-4 ms-4 d-inline-block text6" style="color: #0A306C;">
+                                    Roquefort
+                                    <br> <span style="color:#E8BC5A;">$ 5.5</span>
+                                </h5>
+                                <i class="fa fa-lock d-inline-block float-right mt-4 mx-5 icon5 p-3"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="card  card2">
+                            <div class="card-body p-0 m-0">
+                                <img src="a257.jpg" alt="" class="img-fluid cardeffect2 px-3 ">
+                                <h5 class="text-left fw-bold my-4 ms-4 d-inline-block text6" style="color: #0A306C;">
+                                    Fresh
+                                    Milk
+                                    <br> <span style="color:#E8BC5A;">$ 5.5</span>
+                                </h5>
+                                <i class="fa fa-lock d-inline-block float-right mt-4 mx-5 icon5 p-3"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="card  card2">
+                            <div class="card-body p-0 m-0">
+                                <img src="a255.jpg" alt="" class="img-fluid cardeffect2 px-3">
+                                <h5 class="text-left fw-bold my-4 ms-4 d-inline-block text6" style="color: #0A306C;">
+                                    Butter <br> <span style="color:#E8BC5A;">$ 5.5</span>
+                                </h5>
+                                <i class="fa fa-lock d-inline-block float-right mt-4 mx-5 icon5 p-3"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+
+       <div class="container-fluid">
+           <div class="row">
+                <div class="col-md-12 py-2 divider1"></div>
+           </div>
+       </div>
+
+       <div class="container-fluid map">
+        <div class="row">
+            <div class="col-md-12 p-0 m-0 shadow-sm border-dark">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3769.757318364814!2d74.73233391407805!3d19.118299455611567!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bdcba80bafac9c5%3A0x9861276cd865f31c!2sNirmal%20Dairy!5e0!3m2!1sen!2sin!4v1649840324825!5m2!1sen!2sin"
+                    width="100%" height="340" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid" style="position: relative;top: 40px;z-index: 1;">
+        <div class="row p-0 m-0">
+            <div class="col-md-12" style="background-color:#11375F;border-radius: 5px;">
+                <div class="row p-3 pl-0 pr-0">
+                    <div class="col-lg-3 col-md-6">
+                        <i class="social1 fa fa-phone fw-bold"></i>
+                        <span class="text1 text-light ms-1">
+                            Give Us A Call<br><span class="text2 ms-5 ps-3" style="left: 52px;">
+                                (+91)97 639 694 49</span></span>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6">
+                        <i class="social1 fa fa-envelope fw-bold"></i>
+                        <span class="text1 text-light ms-1">
+                            Email Address<br><span class="text2 ms-5 ps-3" style="left: 52px;">
+                                support@nirmaldairy.com</span></span>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6">
+                        <i class="social1 fa fa-location-dot fw-bold"></i>
+                        <span class="text1 text-light ms-1">
+                            Office Location<br><span class="text2 ms-5 ps-3" style="left: 50px;">
+                                Savedi, Ahmednagar, 414001</span></span>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6">
+                        <i class="social1 fa fa-clock fw-bold"></i>
+                        <span class="text1 text-light ms-1">
+                            Open Hours<br><span class="text2 ms-5 ps-3" style="left: 54px;">
+                                Everyday 07:00 AM-10:00 PM</span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12 py-4" style="background-color: #2F71B5;">
+                <div class="row p-4">
+                    <div class="col-lg-3 col-md-6">
+                        <img src="logo1.png" alt="" class="img-fluid img1 mb-2" height="200px" width="200px">
+                        <p class="mt-2 text2 text-light fw-500">Lorem ipsum dolor sit amet, consectet adipiscing elit,
+                            sed do eiusmod.</p>
+
+                        <i class="fa fa-instagram fw-bold i1"></i>
+                        <i class="fa fa-facebook fw-bold i1" style="padding: 18px 20px;"></i>
+                        <i class="fa fa-linkedin fw-bold i1"></i>
+                        <i class="fa fa-twitter fw-bold i1"></i>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 md-ps-5">
+                        <h3 class="text1 text-light mb-3">QUICK LINKS</h3>
+                        <h3 class="text-light footer2">About Us</h3>
+                        <h3 class="text-light footer2">Services</h3>
+                        <h3 class="text-light footer2">Pricing</h3>
+                        <h3 class="text-light footer2">Blogs</h3>
+                        <h3 class="text-light footer2 mb-3">Contact Us</h3>
+                    </div>
+
+                    <div class="col-lg-2 col-md-6 md-ps-3">
+                        <h3 class="text1 text-light mb-3">Useful Links</h3>
+                        <h3 class="text-light footer2">Privacy Policy</h3>
+                        <h3 class="text-light footer2"> Terms & Conditions</h3>
+                        <h3 class="text-light footer2">Pricing</h3>
+                        <h3 class="text-light footer2"> Support</h3>
+                        <h3 class="text-light footer2 mb-3"> FAQ</h3>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 md-ps-2">
+                        <h3 class="text1 text-light mb-3">Subscribe Our Newsletter</h3>
+                        <h3 class="text-light footer3">Lorem ipsum dolor sit amet, consectetur adipisci elit, sed do
+                            eiusmod tempor incididunt ut labore et dolore magna aliqua</h3>
+
+                        <input type="email" name="" id="" class="text-muted text-left ps-4 mt-3 py-2"
+                            placeholder="Email Address" style="border-radius:20px;border:none;padding:5px 15px;">
+                        <button class="btn btn-dark text2 py-2 px-4 mt-4 ms-3"
+                            style="border-radius:20px;background-color: #11375F;">Subscribe</button>
+                    </div>
+                </div>
+                <div class="col-md-12 text-center m-auto" style="width:94%;border-bottom:solid #427DBB 1px"></div>
+
+                <div class="col-12 mt-2 col-md-12 ps-4">
+                    <h6 class="footer3 text-light">Dairy Farm & Milk Products, Bakery Products by Nirmal Dairy
+                        <span class="footer3 text-light float-end me-4">Copyright © 2022. All rights reserved.</span>
+                    </h6>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        $(document).ready(function () {
+            $(window).scroll(function () {
+                if ($(window).scrollTop() > 90) {
+                    $('.navbar').css({ 'background-color': 'white' });
+                    $('.menud1').css({ 'background-color': 'white' });
+                }
+                else {
+                    $('.navbar').css({ 'background-color': 'transparent', 'box-shadow': '0px 0px 0px 0px orange' });
+                    $('.menud1').css({ 'background-color': 'aliceblue' });
+                }
+            });
+        });
+        AOS.init({
+            duration: 1200,
+        })
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,106 @@
+.row {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.Nirmal-team-items {
+	flex-basis: 100%;
+	max-width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	padding-top: 40px;
+}
+
+.Nirmal-team-items .Nirmal-item {
+	flex-basis: calc(25% - 30px);
+	max-width: calc(25% - 30px);
+	transition: all .5s ease;
+	margin-bottom: 40px;
+}
+
+.Nirmal-team-items .Nirmal-item img {
+	display: block;
+	width: 100%;
+	border-radius: 8px;
+}
+
+.Nirmal-team-items .Nirmal-item .inner {
+	position: relative;
+	padding: 0 10px;
+}
+
+.Nirmal-team-items .Nirmal-item .inner .Nirmal-info {
+	background-color: #11375F;
+	text-align: center;
+	padding: 20px 15px;
+	border-radius: 8px;
+	transition: all .5s ease;
+	margin-top: -40px;
+}
+
+.Nirmal-team-items .Nirmal-item:hover .Nirmal-info {
+	transform: translateY(-5px);
+}
+
+.Nirmal-team-items .Nirmal-item:hover {
+	transform: translateY(-10px);
+}
+
+.Nirmal-team-items .Nirmal-item .inner .Nirmal-info h5 {
+	margin: 0;
+	font-size: 18px;
+	font-weight: 600;
+	color: orange;
+}
+
+.Nirmal-team-items .Nirmal-item .inner .Nirmal-info p {
+	font-size: 16px;
+	font-weight: 400;
+	color: white;
+	margin: 10px 0 0;
+}
+
+.Nirmal-team-items .Nirmal-item .inner .Nirmal-info .Nirmal-social-icons {
+	padding-top: 15px;
+}
+
+.Nirmal-team-items .Nirmal-item .inner .Nirmal-info .Nirmal-social-icons a {
+	display: inline-block;
+	height: 32px;
+	width: 32px;
+	background-color: orange;
+	color: white;
+	border-radius: 50%;
+	margin: 0 2px;
+	text-align: center;
+	line-height: 32px;
+	font-size: 16px;
+	transition: all .5s ease;
+}
+
+.Nirmal-team-items .Nirmal-item .inner .Nirmal-info .Nirmal-social-icons a:hover {
+	box-shadow: 0 0 10px #000;
+}
+
+/*responsive*/
+@media(max-width: 991px) {
+	.Nirmal-team-items .Nirmal-item {
+		flex-basis: calc(50% - 30px);
+		max-width: calc(50% - 30px);
+	}
+}
+
+@media(max-width: 767px) {
+	.Nirmal-team-items .Nirmal-item {
+		flex-basis: calc(100%);
+		max-width: calc(100%);
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.imgfluid {
+		height: 200px !important;
+		width: 100% !important;
+	}
+}

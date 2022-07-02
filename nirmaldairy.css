@@ -1,0 +1,414 @@
+.luci-headings {
+    font-family: 'Beau Rivage', cursive;
+    font-weight: bold;
+    color: #45a72c;
+    transition-duration: 0.5s;
+}
+
+.luci-headings:hover {
+    letter-spacing: 4px;
+    transition-duration: 0.5s;
+}
+
+.ank:hover {
+    transition-duration: 2s;
+    box-shadow: 0px 0px 6px 0px #11375F;
+}
+
+.luci-topp2 {
+    font-size: 12px;
+    font-weight: bold;
+    width: 100%;
+}
+
+.luci-topp2:hover {
+    color: #45a89c;
+    font-weight: bold;
+    transition-duration: 0.4s;
+}
+
+.btn1 {
+    color: #ffffff;
+    background: #259821;
+    padding: 1px 30px;
+    border-radius: 25px;
+    padding-right: 21px;
+    border: none;
+}
+
+.btn-arrow {
+    border-radius: 100%;
+    background-color: whitesmoke;
+    color: #259821;
+    padding: 16px 18px;
+    margin-right: -20px;
+    font-size: 14px;
+}
+
+.review {
+    overflow: hidden;
+}
+
+.review .reviewimg {
+    height: 200px;
+    width: 200px;
+    float: left;
+    border-radius: 100%;
+}
+
+.an{
+    margin-left: 20px;
+    margin-right: 100px;
+}
+.imgslider{
+    margin-bottom: 10px;
+}
+.an .treimgho {
+    height: 200px;
+    width: 200px;
+    float: left;
+    border-radius: 7px;
+    transition-duration: 0.4s;
+}
+
+.an .treimgho:hover {
+    box-shadow: 2px 2px 13px 2px cyan;
+    transition-duration: 0.4s;
+}
+
+.ankcart {
+    position: absolute;
+    left: 115px;
+    top: 85px;
+    font-size: 0px;
+    color: whitesmoke;
+    background-color: orange;
+    transition-duration: 0.4s;
+    border-radius: 100%;
+}
+
+.an:hover .ankcart {
+    color: black;
+    font-size: 15px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    padding: 10px;
+}
+
+.blogd1 {
+    background-image: url('blogimg1.jpg');
+    background-size: cover;
+    height: 220px;
+    transition-duration: 0.3s;
+}
+
+.card:hover .blogd1{
+    transform: scale(1.1);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4),
+            rgba(0, 200, 0, 0.2)),
+        url('blogimg1.jpg');
+    transition-duration: 1s;
+}
+
+.blogc1 {
+    background-color: #11375F;
+    color:white;
+    float: left;
+    position: absolute;
+    top: 160px;
+    padding: 0 15px;
+    width: 95%;
+    padding:10px;
+}
+
+.flownone {
+    height: 200px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.blogd2 {
+    background-image: url('blogimg2.jpg');
+    background-size: cover;
+    height: 220px;
+    transition-duration: 0.3s;
+}
+
+.card:hover .blogd2{
+    transform: scale(1.1);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4),
+            rgba(0, 300, 0, 0.2)),
+        url('blogimg2.jpg');
+    transition-duration: 1s;
+}
+
+.blogd3 {
+    background-image: url('blogimg3.jpg');
+    background-size: cover;
+    height: 220px;
+    transition-duration: 0.3s;
+}
+
+.card:hover .blogd3{
+    transform: scale(1.1);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4),
+            rgba(0, 300, 0, 0.2)),
+        url('blogimg3.jpg');
+    transition-duration: 1s;
+}
+
+.blogd4 {
+    background-image: url('blogimg4.jpg');
+    background-size: cover;
+    height: 220px;
+    transition-duration: 0.3s;
+}
+
+.card:hover .blogd4{
+    transform: scale(1.1);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4),
+            rgba(0, 300, 0, 0.2)),
+        url('blogimg4.jpg');
+    transition-duration: 1s;
+}
+
+.blogd5 {
+    background-image: url('blogimg5.jpg');
+    background-size: cover;
+    height: 220px;
+    transition-duration: 0.3s;
+}
+
+.card:hover .blogd5{
+    transform: scale(1.1);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4),
+            rgba(0, 300, 0, 0.2)),
+        url('blogimg5.jpg');
+    transition-duration: 1s;
+}
+
+.blogd6 {
+    background-image: url('blogimg6.jpg');
+    background-size: cover;
+    height: 220px;
+    transition-duration: 0.3s;
+}
+
+.card:hover .blogd6{
+    transform: scale(1.1);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4),
+            rgba(0, 300, 0, 0.2)),
+        url('blogimg6.jpg');
+    transition-duration: 1s;
+}
+
+.follwus {
+    background-image: url('follow2.jpg');
+    height: 300px;
+    width: 100%;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.follwus-text {
+    font-family: 'Pacifico', cursive;
+    font-size: 50px;
+    color: white;
+    padding: 30px;
+    margin: auto;
+    position: absolute;
+    left: 150px;
+    top: 70px;
+}
+.socialicone {
+    font-size: 30px;
+    color: white;
+    padding: 10px;
+    border: 1px solid white;
+    margin-left: 30px;
+    border-radius: 100%;
+}
+
+@media (min-width: 600px) {
+    .tred1 {
+        display: none;
+        font-size: 0px;
+    }
+
+    .tred1_3 {
+        display: none;
+    }
+    .blogc1 {
+        background-color: #11375F;
+        color:white;
+        float: left;
+        position: absolute;
+        top: 160px;
+        padding: 0 15px;
+        width: 95%;
+        padding:10px;
+    }
+    .btn1 {
+        color: #ffffff;
+        background: #259821;
+        padding: 1px 30px;
+        border-radius: 25px;
+        padding-right: 21px;
+        border: none;
+    }
+    .btn-arrow {
+        border-radius: 100%;
+        background-color: whitesmoke;
+        color: #259821;
+        padding: 16px 18px;
+        margin-right: -20px;
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .sliderimg{
+        height: 500px;
+    }
+    .blogc1 {
+        background-color: #11375F;
+        color:white;
+        float: left;
+        position: absolute;
+        top: 160px;
+        padding: 0 15px;
+        width: 95%;
+        padding:10px;
+    }
+    .follwus {
+        background-image: url('follow2.jpg');
+        height: 200px;
+        width: 100%;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+    
+    .follwus-text {
+        font-family: 'Pacifico', cursive;
+        font-size: 30px;
+        color: white;
+        padding: 10px;
+        margin: auto;
+        position: absolute;
+        left: 0px;
+        top: 70px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .an .treimgho {
+        height: 70px;
+        width: 70px;
+        float: left;
+        border-radius: 7px;
+        transition-duration: 0.4s;
+        margin-top: 20px;
+    }
+    .blogc1 {
+        background-color: #11375F;
+        color:white;
+        float: left;
+        position: absolute;
+        top: 160px;
+        padding: 0 15px;
+        width: 95%;
+        padding:10px;
+    }
+
+    .tred1 {
+        display: block;
+        position: absolute;
+        top: 120px;
+        left: 100px;
+    }
+
+    .tred1_3 {
+        display: block;
+        position: absolute;
+        top: 40px;
+        left: 100px;
+    }
+
+    .an .ankcart {
+        display: none;
+    }
+
+    .an:hover .ankcart {
+        color: black;
+        font-size: 0px;
+        cursor: pointer;
+        transition-duration: 0.4s;
+        padding: 0px;
+
+    }
+
+    .logocl {
+        height: 90px;
+        transition-duration: 0.4s;
+    }
+    .luci-submenu {
+        height: 0px;
+        width: 0px;
+        font-size: 0px;
+        float: left;
+        position: absolute;
+        top: 100px;
+        left: 150px;
+        cursor: pointer;
+        padding: 10px;
+    }
+
+    .no:hover .luci-submenu {
+        background-color: whitesmoke;
+        box-shadow: 2px 2px 12px 2px grey;
+        height: 100px;
+        width: 160px;
+        font-size: 11px;
+        top: 80px;
+        transition-duration: 0.5s;
+    }
+
+    .luci-submenu2 {
+        height: 0px;
+        width: 0px;
+        font-size: 0px;
+        float: left;
+        position: absolute;
+        top: 100px;
+        left: 160px;
+        z-index: 999;
+        cursor: pointer;
+        padding: 10px;
+    }
+
+    .no:hover .luci-submenu2 {
+        background-color: whitesmoke;
+        box-shadow: 2px 2px 12px 2px grey;
+        height: 370px;
+        width: 180px;
+        font-size: 11px;
+        top: 80px;
+        border-radius: 7px;
+        transition-duration: 0.5s;
+    }
+
+    .socialicone {
+        font-size: 17px;
+        color: white;
+        padding: 5px;
+        border: 1px solid white;
+        margin-left: 5px;
+    }
+}
+
+@media screen and(max-width:1200px) {
+    .btnn1{
+        margin-top: 80px;
+    }
+
+}

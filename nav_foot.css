@@ -1,0 +1,259 @@
+* {
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+    margin: 0px;
+    padding: 0px;
+}
+
+#second {
+    width: 100%;
+    height: 90px;
+    position: fixed;
+    top: 0px;
+    z-index: 11;
+    transition-duration: 0.4s;
+}
+
+.menud1 {
+    padding: 10px;
+    background-color: transparent;
+    background-color: rgba(255, 255, 255, 0.4);
+    box-shadow: 2px 2px 4px 2px orange;
+    border-radius: 0px 20px 0px 20px;
+    transition-duration: 0.4s;
+}
+
+.logocl {
+    height: 100px;
+    transition-duration: 0.4s;
+}
+
+.luci-menu-line {
+    height: 0px;
+    width: 0%;
+    background-color: darkred;
+    float: left;
+    transition-duration: 0.7s;
+}
+
+.menucontent:hover .luci-menu-line {
+    height: 2.5px;
+    width: 90px;
+    background-color: darkred;
+    transition-duration: 0.7s;
+    position: absolute;
+}
+
+.luci-submenu {
+    height: 0px;
+    width: 0px;
+    font-size: 0px;
+    float: left;
+    position: absolute;
+    top: 100px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.no:hover .luci-submenu {
+    background-color: whitesmoke;
+    height: 100px;
+    width: 180px;
+    font-size: 13px;
+    top: 80px;
+    border-radius: 7px;
+    transition-duration: 0.5s;
+}
+
+.luci-submenu li {
+    padding: 10px;
+}
+
+.luci-submenu li:hover {
+    background-color: #45a72c;
+    color: whitesmoke;
+    transition-duration: 0.4s;
+    font-weight: bold;
+}
+
+.luci-submenu a {
+    color: black;
+}
+
+.luci-submenu a:hover {
+    text-decoration: none;
+}
+
+.luci-submenu2 {
+    height: 0px;
+    width: 0px;
+    font-size: 0px;
+    float: left;
+    position: absolute;
+    top: 100px;
+    z-index: 999;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.no:hover .luci-submenu2 {
+    background-color: whitesmoke;
+    height: 350px;
+    width: 180px;
+    font-size: 13px;
+    top: 80px;
+    border-radius: 7px;
+    transition-duration: 0.5s;
+}
+
+.luci-submenu2 li {
+    padding: 10px;
+}
+
+.luci-submenu2 a {
+    color: black;
+}
+
+.luci-submenu2 li:hover {
+    background-color: #45a72c;
+    color: whitesmoke;
+    transition-duration: 0.4s;
+    font-weight: bold;
+}
+
+.luci-submenu2 a:hover {
+    text-decoration: none;
+}
+
+
+.heading {
+    width: 100%;
+    height: 450px;
+    background: url('a232.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    text-align: center;
+    justify-content: center;
+    padding-top: 180px;
+}
+
+.heading h1 {
+    font-size: 55px;
+    text-shadow: 2px 3px 6px rgb(255, 255, 255);
+    font-weight: bolder;
+}
+
+.heading h2 {
+    text-shadow: 2px 3px 6px rgb(255, 255, 255);
+    font-weight: bolder;
+    color: orange;
+}
+
+.heading h2:hover {
+    color: rgb(0, 89, 255) !important;
+}
+
+.social1 {
+    color: white;
+    background-color: #2065AE;
+    padding: 15px;
+    font-size: 18px;
+    border-radius: 100%;
+    position: relative;
+    top: 14px;
+}
+
+.text1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 22px;
+    line-height: 30px;
+}
+
+.text2 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    position: relative;
+    top: -15px;
+    left: 6px;
+}
+
+.i1 {
+    padding: 18px;
+    background-color: #11375F;
+    color: white;
+    border-radius: 100%;
+    transition: all 0.4s ease;
+    margin-left: 5px;
+}
+
+.i1:hover {
+    transform: scale(0.9);
+    color: #11375F;
+    background-color: white;
+}
+
+.map{
+    margin-top: 10px;
+    margin-bottom: -120px;
+}
+.footer2 {
+
+    font-family: Lato, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 25px;
+    transition: all 0.3s ease;
+}
+
+.footer2:hover {
+    color: #11375F !important;
+}
+
+.footer3 {
+
+    font-family: Lato, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 25px;
+    transition: all 0.3s ease;
+}
+
+@media(max-width:650px) {
+    .heading {
+        width: 100%;
+        height: 320px;
+        background: url('a232.jpg');
+        background-repeat: no-repeat;
+        background-size: 150% 100%;
+        text-align: center;
+        justify-content: center;
+        padding-top: 120px;
+    }
+
+    .heading h1 {
+        font-size: 45px;
+        text-shadow: 2px 3px 6px rgb(255, 255, 255);
+        font-weight: bolder;
+    }
+
+    .heading h2 {
+        text-shadow: 2px 3px 6px rgb(255, 255, 255);
+        font-weight: bolder;
+        color: orange;
+    }
+
+    .footer3 {
+        text-align: center !important;
+    }
+
+    .footer3 span {
+        padding-right: 80px;
+    }
+    .map{
+        margin-top: 10px;
+        margin-bottom: -362px;
+    }
+    .map iframe{
+        height: 600px;
+    }
+}
